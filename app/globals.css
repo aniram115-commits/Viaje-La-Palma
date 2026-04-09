@@ -208,14 +208,16 @@ button {
 }
 
 .stop-number {
-  width: 46px;
-  height: 46px;
-  border-radius: 16px;
-  background: linear-gradient(180deg, #ffd18c, #ffb95d);
-  color: #7a4d10;
-  display: grid;
-  place-items: center;
+  background: linear-gradient(135deg, #f6c177, #e3a34d);
+  color: #5a3b00;
   font-weight: 800;
+  font-size: 12px;
+  border-radius: 14px;
+  padding: 8px 10px;
+  min-width: 84px;
+  text-align: center;
+  box-shadow: 0 6px 14px rgba(200, 140, 40, 0.22);
+  line-height: 1.25;
   flex-shrink: 0;
 }
 
@@ -248,15 +250,28 @@ button {
 }
 
 .chevron {
-  width: 42px;
-  height: 42px;
-  border-radius: 14px;
-  background: var(--paper-2);
-  color: #915d18;
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #fff7ea, #f3e1c3);
+  color: #9a630b;
   display: grid;
   place-items: center;
-  font-size: 1.5rem;
+  font-size: 1.35rem;
+  font-weight: 800;
   flex-shrink: 0;
+  border: 1px solid #ead8ba;
+  box-shadow:
+    0 8px 18px rgba(120, 85, 20, 0.10),
+    inset 0 1px 0 rgba(255,255,255,0.7);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.chevron:hover {
+  transform: translateY(-1px);
+  box-shadow:
+    0 12px 22px rgba(120, 85, 20, 0.16),
+    0 0 0 3px rgba(246, 177, 90, 0.14);
 }
 
 .stop-content {
@@ -356,15 +371,9 @@ button {
 
   .hero,
   .day-summary,
-.stop-card {
-  background: linear-gradient(180deg, #ffffff, #fbf7f0);
-  border: 1px solid var(--line);
-  border-radius: 28px;
-  overflow: hidden;
-
-  box-shadow:
-    0 10px 24px rgba(60, 40, 10, 0.08);
-}
+  .stop-card {
+    border-radius: 24px;
+  }
 
   .hero,
   .day-summary,
@@ -376,12 +385,14 @@ button {
 
   .stop-trigger {
     gap: 12px;
+    align-items: flex-start;
   }
 
   .stop-number {
-    width: 40px;
-    height: 40px;
-    border-radius: 14px;
+    min-width: 72px;
+    font-size: 11px;
+    padding: 7px 8px;
+    border-radius: 12px;
   }
 
   .stop-trigger h3 {
@@ -391,9 +402,20 @@ button {
   .actions a {
     width: 100%;
   }
+
+  .chevron {
+    width: 48px;
+    height: 48px;
+  }
 }
 
 .day-section {
   scroll-margin-top: 24px;
   margin-top: 22px;
+}
+
+.active-card {
+  box-shadow:
+    0 16px 32px rgba(180, 120, 40, 0.12),
+    0 0 0 3px rgba(246, 177, 90, 0.10);
 }
