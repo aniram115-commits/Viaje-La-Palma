@@ -67,7 +67,7 @@ export default function HomePage() {
           return (
             <article
   key={stop.name}
-  className={isOpen ? "stop-card open glow" : "stop-card"}
+  className={isOpen ? "stop-card open glow active-card" : "stop-card"}
 >
               <button
                 className="stop-trigger"
@@ -76,9 +76,8 @@ export default function HomePage() {
                 }
               >
                 <div className="stop-left">
-                  <div className="stop-number">{index + 1}</div>
+                  <div className="stop-number">{stop.time}</div>
                   <div>
-                    <div className="stop-time">{stop.time}</div>
                     <h3>{stop.name}</h3>
                     <div className="chips">
                       <span>{stop.place}</span>
