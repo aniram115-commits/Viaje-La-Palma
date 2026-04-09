@@ -15,30 +15,38 @@ export default function HomePage() {
   return (
     <main className="page-shell">
       <section className="hero">
-        <span className="eyebrow">Viaje compartible</span>
-        <h1>La Palma con amigos</h1>
-        <p>
-          Toca un día y luego una parada. Cada parada se abre en su propio sitio,
-          sin mandarte al final de la página. Todo el contenido se puede editar
-          fácilmente en un solo archivo.
-        </p>
-      </section>
+        <div className="hero-topbar">
+          <label htmlFor="day-select" className="day-select-label">
+            Día
+          </label>
 
-      <section className="day-tabs" aria-label="Días del viaje">
-        {itinerary.map((day) => (
-          <button
-            key={day.id}
-            className={day.id === selectedDayId ? "day-tab active" : "day-tab"}
-            onClick={() => {
-              setSelectedDayId(day.id);
-              setOpenStopName(day.stops[0].name);
+          <select
+            id="day-select"
+            className="day-select"
+            value={selectedDayId}
+            onChange={(e) => {
+              const newDayId = e.target.value;
+              const newDay =
+                itinerary.find((day) => day.id === newDayId) ?? itinerary[0];
+
+              setSelectedDayId(newDayId);
+              setOpenStopName(newDay.stops[0].name);
             }}
           >
-            <span className="day-label">{day.label}</span>
-            <strong>{day.title}</strong>
-            <small>{day.zone}</small>
-          </button>
-        ))}
+            {itinerary.map((day) => (
+              <option key={day.id} value={day.id}>
+                {day.label} · {day.title}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        <span className="eyebrow">Viaje a La Palma</span>
+        <h1>La Palma con amigos</h1>
+        <p>
+          Un plan para enseñaros el viaje día a día, con horarios, paradas y enlaces
+          para ver cada sitio en el mapa y en fotos.
+        </p>
       </section>
 
       <section className="day-summary">
@@ -58,8 +66,9 @@ export default function HomePage() {
             <article key={stop.name} className={isOpen ? "stop-card open" : "stop-card"}>
               <button
                 className="stop-trigger"
-                onClick={() => setOpenStopName((current) => (current === stop.name ? "" : stop.name))}
-                aria-expanded={isOpen}
+                onClick={() =>
+                  setOpenStopName((current) => (current === stop.name ? "" : stop.name))
+                }
               >
                 <div className="stop-left">
                   <div className="stop-number">{index + 1}</div>
@@ -73,7 +82,7 @@ export default function HomePage() {
                   </div>
                 </div>
 
-                <div className="chevron" aria-hidden="true">
+                <div className="chevron">
                   {isOpen ? "−" : "+"}
                 </div>
               </button>
@@ -107,10 +116,10 @@ export default function HomePage() {
                   </div>
 
                   <div className="actions">
-                    <a href={stop.maps} target="_blank" rel="noreferrer">
+                    <a href={stop.maps} target="_blank">
                       Ver dónde está
                     </a>
-                    <a href={stop.photos} target="_blank" rel="noreferrer" className="secondary">
+                    <a href={stop.photos} target="_blank" className="secondary">
                       Ver fotos
                     </a>
                   </div>
