@@ -19,6 +19,7 @@ export default function HomePage() {
           <label htmlFor="day-select" className="day-select-label">
             Día
           </label>
+
           <select
             id="day-select"
             className="day-select"
@@ -68,7 +69,6 @@ export default function HomePage() {
                 onClick={() =>
                   setOpenStopName((current) => (current === stop.name ? "" : stop.name))
                 }
-                aria-expanded={isOpen}
               >
                 <div className="stop-left">
                   <div className="stop-number">{index + 1}</div>
@@ -82,7 +82,7 @@ export default function HomePage() {
                   </div>
                 </div>
 
-                <div className="chevron" aria-hidden="true">
+                <div className="chevron">
                   {isOpen ? "−" : "+"}
                 </div>
               </button>
@@ -116,10 +116,10 @@ export default function HomePage() {
                   </div>
 
                   <div className="actions">
-                    <a href={stop.maps} target="_blank" rel="noreferrer">
+                    <a href={stop.maps} target="_blank">
                       Ver dónde está
                     </a>
-                    <a href={stop.photos} target="_blank" rel="noreferrer" className="secondary">
+                    <a href={stop.photos} target="_blank" className="secondary">
                       Ver fotos
                     </a>
                   </div>
