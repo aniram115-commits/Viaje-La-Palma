@@ -468,3 +468,18 @@ color: #1aa6a6;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.day-tab.important {
+  background: linear-gradient(180deg, #fff4e6, #ffe2b8);
+  border-color: #f6b15a;
+  color: #8e5a16;
+}
+
+.day-tab.important.active {
+  background: linear-gradient(180deg, #f6b15a, #e89b3c);
+  color: white;
+
+  box-shadow:
+    0 12px 26px rgba(232, 155, 60, 0.35),
+    0 0 0 3px rgba(232, 155, 60, 0.2);
+}

@@ -6,7 +6,7 @@ import { itinerary } from "@/data/itinerary";
 export default function HomePage() {
 const [selectedDayId, setSelectedDayId] = useState(itinerary[0].id);
 const [openStopName, setOpenStopName] = useState("");
-const [currentView, setCurrentView] = useState<"home" | "day" | "final">("home");
+const [currentView, setCurrentView] = useState<"home" | "day" | "final" | "important">("home");
 
   const selectedDay = useMemo(
     () => itinerary.find((day) => day.id === selectedDayId) ?? itinerary[0],
@@ -54,6 +54,16 @@ const [currentView, setCurrentView] = useState<"home" | "day" | "final">("home")
     >
       Final
     </button>
+
+<button
+  className={currentView === "important" ? "day-tab important active glow" : "day-tab important"}
+  onClick={() => {
+    setCurrentView("important");
+    setOpenStopName("");
+  }}
+>
+  ⚠️ Importante
+</button>
   </div>
 
   {currentView === "home" && (
@@ -103,6 +113,62 @@ const [currentView, setCurrentView] = useState<"home" | "day" | "final">("home")
       </div>
     </>
   )}
+
+{currentView === "important" && (
+  <>
+    <span className="eyebrow">Importante 🧳</span>
+
+    <h1 className="gradient-title">Antes del viaje</h1>
+
+    <p className="hero-text">
+      Algunas cosas clave para que todo vaya perfecto y sin estrés.
+    </p>
+
+    <div className="final-card">
+      <p>
+        Aunque he puesto lo necesario en cada día, yo llevaría siempre en el coche:
+      </p>
+
+      <ul>
+        <li>🧥 Ropa en capas (fina + abrigo)</li>
+        <li>🩱 Bañador</li>
+        <li>🩴 Cholas</li>
+        <li>🏖️ Toalla</li>
+        <li>🧴 Protector solar</li>
+        <li>👕 Ropa para cambiarse</li>
+        <li>🥾 Zapatillas cerradas</li>
+        <li>💧 Agua</li>
+        <li>🍫 Algo de picar</li>
+        <li>🕶️ Gafas de sol</li>
+        <li>🔋 Powerbank</li>
+      </ul>
+
+      <p>
+        👉 El primer día, después de Charco Azul iremos a Santa Cruz,
+        así que mejor llevar ropa para cambiarse (¡aquí ya se valen tacones 😄).
+      </p>
+
+      <br />
+
+      <p>
+        Si veis demasiadas cosas, me decís y lo ajustamos o añadimos lo que queráis.
+      </p>
+
+      <p>Puede que:</p>
+
+      <ul>
+        <li>⏱️ Nos retrasemos</li>
+        <li>🚧 Carreteras afectadas por el Tajogaite</li>
+        <li>📍 Tengamos que dejar algo sin ver</li>
+      </ul>
+
+      <p>
+        👉 La idea es disfrutar sin agobios 😊
+      </p>
+    </div>
+  </>
+)}
+
 </section>
 
 {currentView === "day" && (
