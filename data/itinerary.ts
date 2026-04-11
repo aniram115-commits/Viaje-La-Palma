@@ -154,6 +154,7 @@ export const itinerary: DayPlan[] = [
       }
     ]
   },
+  {
     id: "dia-2",
     label: "Día 2",
     title: "Recuerdos de Infancia y el Gran Cráter",
