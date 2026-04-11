@@ -427,3 +427,34 @@ color: #1aa6a6;
     0 16px 32px rgba(180, 120, 40, 0.12),
     0 0 0 3px rgba(246, 177, 90, 0.10);
 }
+
+.hero-photo {
+  width: 100%;
+  margin-top: 18px;
+  border-radius: 20px;
+  display: block;
+  object-fit: cover;
+  max-height: 260px;
+  border: 1px solid #eadbc8;
+  box-shadow: 0 10px 24px rgba(120, 85, 20, 0.12);
+}
+
+.final-card {
+  margin-top: 18px;
+  background: #fffdf8;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 18px;
+}
+
+.final-card ul {
+  margin: 0 0 14px;
+  padding-left: 20px;
+  line-height: 1.8;
+}
+
+.final-card p {
+  margin: 0;
+  color: var(--text);
+  line-height: 1.7;
+}

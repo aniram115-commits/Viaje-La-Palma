@@ -6,7 +6,7 @@ import { itinerary } from "@/data/itinerary";
 export default function HomePage() {
 const [selectedDayId, setSelectedDayId] = useState(itinerary[0].id);
 const [openStopName, setOpenStopName] = useState("");
-const [showHome, setShowHome] = useState(true);
+const [currentView, setCurrentView] = useState<"home" | "day" | "final">("home");
 
   const selectedDay = useMemo(
     () => itinerary.find((day) => day.id === selectedDayId) ?? itinerary[0],
@@ -15,59 +15,109 @@ const [showHome, setShowHome] = useState(true);
 
   return (
     <main className="page-shell">
-{showHome && (
-  <section className="hero">
-    <div className="day-tabs">
-      {itinerary.map((day) => (
-        <button
-          key={day.id}
-          className={
-            day.id === selectedDayId
-              ? "day-tab active glow"
-              : "day-tab"
-          }
-          onClick={() => {
-            setSelectedDayId(day.id);
-            setOpenStopName("");
-            setShowHome(false);
-          }}
-        >
-          {day.label}
-        </button>
-      ))}
-    </div>
-
-    <span className="eyebrow">Viaje a La Palma 🌴</span>
-
-    <h1>La Palma con amigos ✨</h1>
-
-    <p className="hero-text">
-      Un plan para enseñaros el viaje día a día, con horarios, paradas y enlaces
-      para ver cada sitio en el mapa y en fotos.
-    </p>
-  </section>
-)}
-
-      {!showHome && (
-        <>
-<section className="day-summary">
-  <div style={{ width: "100%" }}>
+<section className="hero">
+  <div className="day-tabs">
     <button
-      onClick={() => setShowHome(true)}
-      style={{ marginBottom: "12px" }}
+      className={currentView === "home" ? "day-tab active glow" : "day-tab"}
+      onClick={() => {
+        setCurrentView("home");
+        setOpenStopName("");
+      }}
     >
-      ← Volver
+      Inicio
     </button>
 
-    <span className="eyebrow soft">{selectedDay.label}</span>
-    <h2>{selectedDay.title}</h2>
-    <p>{selectedDay.intro}</p>
+    {itinerary.map((day) => (
+      <button
+        key={day.id}
+        className={
+          currentView === "day" && day.id === selectedDayId
+            ? "day-tab active glow"
+            : "day-tab"
+        }
+        onClick={() => {
+          setSelectedDayId(day.id);
+          setOpenStopName("");
+          setCurrentView("day");
+        }}
+      >
+        {day.label}
+      </button>
+    ))}
+
+    <button
+      className={currentView === "final" ? "day-tab active glow" : "day-tab"}
+      onClick={() => {
+        setCurrentView("final");
+        setOpenStopName("");
+      }}
+    >
+      Final
+    </button>
   </div>
 
-  <div className="pill">{selectedDay.zone}</div>
+  {currentView === "home" && (
+    <>
+      <span className="eyebrow">Viaje a La Palma 🌴</span>
+
+      <h1>La Palma con amigos ✨</h1>
+
+      <p className="hero-text">
+        Un plan para enseñaros el viaje día a día, con horarios, paradas y enlaces
+        para ver cada sitio en el mapa y en fotos.
+      </p>
+
+      <img
+        className="hero-photo"
+        src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
+        alt="Paisaje de La Palma"
+      />
+    </>
+  )}
+
+  {currentView === "final" && (
+    <>
+      <span className="eyebrow">Cierre del viaje ✨</span>
+
+      <h1>Lo mejor de La Palma</h1>
+
+      <p className="hero-text">
+        Después de estos tres días, nos vamos con la sensación de haber visto lo
+        mejor de La Palma.
+      </p>
+
+      <div className="final-card">
+        <ul>
+          <li>🌿 Bosques únicos</li>
+          <li>🌋 Volcanes de verdad</li>
+          <li>🌊 Baños en sitios espectaculares</li>
+          <li>🌄 Miradores brutales</li>
+        </ul>
+        <p>Y probablemente… 👉 nos quedaremos con ganas de más 😄</p>
+      </div>
+
+      <img
+        className="hero-photo"
+        src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80"
+        alt="Paisaje final de La Palma"
+      />
+    </>
+  )}
 </section>
 
-      <section className="stops-list">
+{currentView === "day" && (
+  <>
+    <section className="day-summary">
+      <div style={{ width: "100%" }}>
+        <span className="eyebrow soft">{selectedDay.label}</span>
+        <h2>{selectedDay.title}</h2>
+        <p>{selectedDay.intro}</p>
+      </div>
+
+      <div className="pill">{selectedDay.zone}</div>
+    </section>
+
+    <section className="stops-list">
         {selectedDay.stops.map((stop, index) => {
           const isOpen = stop.name === openStopName;
 
