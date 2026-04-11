@@ -27,6 +27,16 @@ const [currentView, setCurrentView] = useState<"home" | "day" | "final" | "impor
       Inicio
     </button>
 
+<button
+  className={currentView === "important" ? "day-tab important active glow" : "day-tab important"}
+  onClick={() => {
+    setCurrentView("important");
+    setOpenStopName("");
+  }}
+>
+  ⚠️ Importante
+</button>
+
     {itinerary.map((day) => (
       <button
         key={day.id}
@@ -55,15 +65,6 @@ const [currentView, setCurrentView] = useState<"home" | "day" | "final" | "impor
       Final
     </button>
 
-<button
-  className={currentView === "important" ? "day-tab important active glow" : "day-tab important"}
-  onClick={() => {
-    setCurrentView("important");
-    setOpenStopName("");
-  }}
->
-  ⚠️ Importante
-</button>
   </div>
 
   {currentView === "home" && (
