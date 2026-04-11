@@ -97,10 +97,6 @@ if (element) {
                   <div className="stop-number">{stop.time}</div>
                   <div>
                     <h3>{stop.name}</h3>
-                    <div className="chips">
-                      <span>{stop.place}</span>
-                      <span>{stop.type}</span>
-                    </div>
                   </div>
                 </div>
 
@@ -138,12 +134,12 @@ if (element) {
                   </div>
 
                   <div className="actions">
-                    <a href={stop.maps} target="_blank">
-                      Ver dónde está
-                    </a>
-                    <a href={stop.photos} target="_blank" className="secondary">
-                      Ver fotos
-                    </a>
+<a href={stop.maps} target="_blank">
+  📍 Ubicación
+</a>
+<a href={stop.photos} target="_blank" className="secondary">
+  📸 Fotos
+</a>
                   </div>
                 </div>
               )}
