@@ -224,7 +224,7 @@ intro:
 
   {
     time: "15:30 – 16:15",
-    name: "Tajogaite",
+    name: "Volcán Tajogaite (erupcicón del 2021)",
     place: "",
     type: "",
     description:
@@ -244,7 +244,7 @@ intro:
 
   {
     time: "16:45 – 17:15",
-    name: "La Cumbrecita",
+    name: "Mirado de La Cumbrecita",
     place: "",
     type: "",
     description:
@@ -319,135 +319,147 @@ intro:
     id: "dia-3",
     label: "Día 3",
     title: "El Techo de la Isla y los Volcanes del Sur",
-    zone: "Cumbres y Fuencaliente",
-    intro:
-      "Altura, cráteres, salinas y baño de despedida para terminar el viaje por todo lo alto.",
-    stops: [
-      {
-        time: "09:30 – 11:30",
-        name: "Roque de los Muchachos",
-        place: "Garafía",
-        type: "Cumbre",
-        description:
-          "El punto más alto de la isla y uno de los grandes miradores de La Palma.",
-        whatYouSee:
-          "Mar de nubes, cresterías, observatorios y una sensación brutal de altura.",
-        whyGo:
-          "Porque es una de las experiencias paisajísticas más potentes del viaje.",
-        highlights: [
-          "Llevad algo de abrigo",
-          "Carretera con curvas",
-          "Parada imprescindible"
-        ],
-        maps:
-          "https://www.google.com/maps/search/?api=1&query=Roque+de+los+Muchachos+La+Palma",
-        photos:
-          "https://www.google.com/search?tbm=isch&q=Roque+de+los+Muchachos+La+Palma"
-      },
-      {
-        time: "12:00 – 13:00",
-        name: "Puntagorda / Mirador de Izcagua",
-        place: "Puntagorda",
-        type: "Parada",
-        description:
-          "Parada breve para estirar las piernas y sumar otra perspectiva del noroeste.",
-        whatYouSee:
-          "Barrancos, vegetación y una pasarela-mirador suspendida.",
-        whyGo:
-          "Porque encaja genial como pausa escénica entre trayectos largos.",
-        highlights: [
-          "Flexible según el ritmo",
-          "Muy bien para fotos rápidas",
-          "Añade variedad al recorrido"
-        ],
-        maps:
-          "https://www.google.com/maps/search/?api=1&query=Mirador+de+Izcagua+Puntagorda+La+Palma",
-        photos:
-          "https://www.google.com/search?tbm=isch&q=Mirador+de+Izcagua+Puntagorda+La+Palma"
-      },
-      {
-        time: "13:30 – 14:15",
-        name: "Miradores de Tajogaite",
-        place: "Zona de El Paso / Fuencaliente",
-        type: "Volcán",
-        description:
-          "Parada para contemplar el paisaje reciente modelado por la erupción.",
-        whatYouSee:
-          "Coladas, tonos negros y rojizos y una geografía nueva e impactante.",
-        whyGo:
-          "Porque enseña la parte más reciente y cambiante de La Palma.",
-        highlights: [
-          "Muy impresionante aunque la visita sea corta",
-          "Paisaje único",
-          "Muy visual"
-        ],
-        maps:
-          "https://www.google.com/maps/search/?api=1&query=Mirador+de+Tajogaite+La+Palma",
-        photos:
-          "https://www.google.com/search?tbm=isch&q=Miradores+de+Tajogaite+La+Palma"
-      },
-      {
-        time: "14:30 – 16:00",
-        name: "Comida en Kiosko La Zamora",
-        place: "Fuencaliente",
-        type: "Comida",
-        description:
-          "Almuerzo frente al mar antes de la gran tarde del sur.",
-        whatYouSee:
-          "Costa abierta, Atlántico y una pausa luminosa frente al agua.",
-        whyGo:
-          "Porque sienta genial antes del tramo final del itinerario.",
-        highlights: [
-          "Ideal con vistas",
-          "Mejor ir con margen",
-          "Muy buena pausa"
-        ],
-        maps:
-          "https://www.google.com/maps/search/?api=1&query=Kiosko+La+Zamora+Fuencaliente+La+Palma",
-        photos:
-          "https://www.google.com/search?tbm=isch&q=Kiosko+La+Zamora+Fuencaliente+La+Palma"
-      },
-      {
-        time: "16:30 – 18:30",
-        name: "Ruta de Volcanes y Sal",
-        place: "Fuencaliente",
-        type: "Ruta",
-        description:
-          "Tarde muy completa entre el Volcán de San Antonio, el faro, las salinas y el baño final.",
-        whatYouSee:
-          "Crater volcánico, laderas negras, faro blanco, salinas geométricas y costa salvaje.",
-        whyGo:
-          "Porque resume de forma espectacular la personalidad volcánica del sur.",
-        highlights: [
-          "Protección solar y agua",
-          "Puede ajustarse según cansancio",
-          "Muy variado y muy bonito"
-        ],
-        maps:
-          "https://www.google.com/maps/search/?api=1&query=Volcan+de+San+Antonio+Faro+y+Salinas+de+Fuencaliente+La+Palma",
-        photos:
-          "https://www.google.com/search?tbm=isch&q=Volcan+de+San+Antonio+Salinas+de+Fuencaliente+Playa+de+Echentive+La+Palma"
-      },
-      {
-        time: "19:00",
-        name: "Despedida en Kiosko Bajamar",
-        place: "Este de la isla",
-        type: "Despedida",
-        description:
-          "Últimas tapas y cierre final del viaje en un plan sencillo y emotivo.",
-        whatYouSee:
-          "Ambiente costero relajado y sensación de último brindis.",
-        whyGo:
-          "Porque es un final fácil, rico y bonito para comentar todo el viaje.",
-        highlights: [
-          "Sin complicarse",
-          "Buen cierre",
-          "Plan tranquilo"
-        ],
-        maps:
-          "https://www.google.com/maps/search/?api=1&query=Kiosko+Bajamar+La+Palma",
-        photos: "https://www.google.com/search?tbm=isch&q=Kiosko+Bajamar+La+Palma"
-      }
-    ]
+zone: "Cumbre y Sur volcánico",
+intro:
+  "Altura, volcanes, mar y despedida perfecta recorriendo el sur de la isla de principio a fin.",
+   stops: [
+  {
+    time: "08:30 – 10:30",
+    name: "Roque de los Muchachos",
+    place: "",
+    type: "",
+    description:
+      "Subimos al punto más alto de la isla. Aquí arriba veremos el famoso mar de nubes y unas vistas espectaculares de la caldera.",
+    whatYouSee:
+      "Mar de nubes, cresterías y una sensación brutal de altura. En días despejados se ven Tenerife, La Gomera y El Hierro.",
+    whyGo:
+      "Es una de las experiencias paisajísticas más potentes del viaje.",
+    highlights: [
+      "Muchas curvas en la subida",
+      "No quedarse demasiado tiempo",
+      "Llevar algo de abrigo"
+    ],
+    maps: "https://www.google.com/maps/search/?api=1&query=Roque+de+los+Muchachos+La+Palma",
+    photos: "https://www.google.com/search?tbm=isch&q=Roque+de+los+Muchachos+La+Palma"
+  },
+
+  {
+    time: "11:15 – 11:30",
+    name: "Mirador del Time",
+    place: "",
+    type: "",
+    description:
+      "Parada rápida para ver el Valle de Aridane desde arriba.",
+    whatYouSee:
+      "Plataneras, barrancos y una vista abierta del valle.",
+    whyGo:
+      "Porque en pocos minutos tienes una panorámica espectacular.",
+    highlights: [
+      "Parada corta",
+      "Ideal para fotos",
+      "Seguimos rápido"
+    ],
+    maps: "https://www.google.com/maps/search/?api=1&query=Mirador+del+Time+La+Palma",
+    photos: "https://www.google.com/search?tbm=isch&q=Mirador+del+Time+La+Palma"
+  },
+
+  {
+    time: "13:00 – 14:30",
+    name: "Comida en Puerto de Tazacorte",
+    place: "",
+    type: "",
+    description:
+      "Después de la mañana de cumbre, paramos a comer sin prisa junto al mar.",
+    whatYouSee:
+      "Playa, puerto y ambiente relajado.",
+    whyGo:
+      "Para recargar energía antes del sur.",
+    highlights: [
+      "Comer sin prisa",
+      "Buen ambiente",
+      "Posibilidad de adelantar si vamos bien"
+    ],
+    maps: "https://www.google.com/maps/search/?api=1&query=Puerto+de+Tazacorte+La+Palma",
+    photos: "https://www.google.com/search?tbm=isch&q=Puerto+de+Tazacorte+La+Palma"
+  },
+
+  {
+    time: "15:30 – 16:15",
+    name: "Volcán de San Antonio",
+    place: "",
+    type: "",
+    description:
+      "Caminamos por el borde del cráter con vistas al mar.",
+    whatYouSee:
+      "Cráter volcánico, laderas negras y contraste con el océano.",
+    whyGo:
+      "Porque es una forma muy visual de entender el volcán.",
+    highlights: [
+      "Entrada aprox 5€",
+      "Ruta corta",
+      "Llevar gorra"
+    ],
+    maps: "https://www.google.com/maps/search/?api=1&query=Volcan+de+San+Antonio+La+Palma",
+    photos: "https://www.google.com/search?tbm=isch&q=Volcan+de+San+Antonio+La+Palma"
+  },
+
+  {
+    time: "16:30 – 17:15",
+    name: "Playa de Echentive",
+    place: "",
+    type: "",
+    description:
+      "Baño en charcos volcánicos más salvajes y menos preparados.",
+    whatYouSee:
+      "Piscinas naturales entre roca volcánica.",
+    whyGo:
+      "Perfecto para el último chapuzón del viaje.",
+    highlights: [
+      "Vigilar el tiempo",
+      "Muy salvaje",
+      "Último baño"
+    ],
+    maps: "https://www.google.com/maps/search/?api=1&query=Playa+de+Echentive+La+Palma",
+    photos: "https://www.google.com/search?tbm=isch&q=Playa+de+Echentive+La+Palma"
+  },
+
+  {
+    time: "17:20 – 17:40",
+    name: "Salinas de Fuencaliente",
+    place: "",
+    type: "",
+    description:
+      "Parada rápida en las salinas más fotogénicas de la isla.",
+    whatYouSee:
+      "Salinas con tonos rosados y geometría espectacular.",
+    whyGo:
+      "Muy visual y perfecta para fotos.",
+    highlights: [
+      "Muy fotogénico",
+      "Parada corta"
+    ],
+    maps: "https://www.google.com/maps/search/?api=1&query=Salinas+de+Fuencaliente+La+Palma",
+    photos: "https://www.google.com/search?tbm=isch&q=Salinas+de+Fuencaliente+La+Palma"
+  },
+
+  {
+    time: "17:45 – 18:00",
+    name: "Faro de Fuencaliente",
+    place: "",
+    type: "",
+    description:
+      "Última parada del viaje con mar, volcán y faro.",
+    whatYouSee:
+      "Paisaje volcánico, océano y el faro.",
+    whyGo:
+      "Cierre perfecto del viaje.",
+    highlights: [
+      "Parada final",
+      "Muy visual"
+    ],
+    maps: "https://www.google.com/maps/search/?api=1&query=Faro+de+Fuencaliente+La+Palma",
+    photos: "https://www.google.com/search?tbm=isch&q=Faro+de+Fuencaliente+La+Palma"
+  }
+]
   }
 ];
