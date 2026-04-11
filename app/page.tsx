@@ -67,11 +67,11 @@ const [currentView, setCurrentView] = useState<"home" | "day" | "final">("home")
         para ver cada sitio en el mapa y en fotos.
       </p>
 
-      <img
-        className="hero-photo"
-        src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
-        alt="Paisaje de La Palma"
-      />
+<img
+  className="hero-photo"
+  src="/images/inicio.jpg"
+  alt="La Palma mapa ilustrado"
+/>
     </>
   )}
 
@@ -85,6 +85,12 @@ const [currentView, setCurrentView] = useState<"home" | "day" | "final">("home")
         Después de estos tres días, nos vamos con la sensación de haber visto lo
         mejor de La Palma.
       </p>
+
+<img
+  className="hero-photo"
+  src="/images/final.jpg"
+  alt="Atardecer en La Palma"
+/>
 
       <div className="final-card">
         <ul>
