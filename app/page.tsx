@@ -4,8 +4,9 @@ import { useMemo, useState } from "react";
 import { itinerary } from "@/data/itinerary";
 
 export default function HomePage() {
-  const [selectedDayId, setSelectedDayId] = useState(itinerary[0].id);
+const [selectedDayId, setSelectedDayId] = useState(itinerary[0].id);
 const [openStopName, setOpenStopName] = useState("");
+const [showHome, setShowHome] = useState(true);
 
   const selectedDay = useMemo(
     () => itinerary.find((day) => day.id === selectedDayId) ?? itinerary[0],
@@ -14,47 +15,57 @@ const [openStopName, setOpenStopName] = useState("");
 
   return (
     <main className="page-shell">
-      <section className="hero">
-        <div className="day-tabs">
-          {itinerary.map((day) => (
-            <button
-              key={day.id}
-              className={
-  day.id === selectedDayId
-    ? "day-tab active glow"
-    : "day-tab"
-}
-              onClick={() => {
-  setSelectedDayId(day.id);
-  setOpenStopName("");
-}}
-            >
-              {day.label}
-            </button>
-          ))}
-        </div>
+{showHome && (
+  <section className="hero">
+    <div className="day-tabs">
+      {itinerary.map((day) => (
+        <button
+          key={day.id}
+          className={
+            day.id === selectedDayId
+              ? "day-tab active glow"
+              : "day-tab"
+          }
+          onClick={() => {
+            setSelectedDayId(day.id);
+            setOpenStopName("");
+            setShowHome(false);
+          }}
+        >
+          {day.label}
+        </button>
+      ))}
+    </div>
 
-<span className="eyebrow">Viaje a La Palma 🌴</span>
+    <span className="eyebrow">Viaje a La Palma 🌴</span>
 
-<h1>
-  La Palma con amigos ✨
-</h1>
+    <h1>La Palma con amigos ✨</h1>
 
-<p className="hero-text">
-  Un plan para enseñaros el viaje día a día, con horarios, paradas y enlaces
-  para ver cada sitio en el mapa y en fotos.
-</p>
+    <p className="hero-text">
+      Un plan para enseñaros el viaje día a día, con horarios, paradas y enlaces
+      para ver cada sitio en el mapa y en fotos.
+    </p>
+  </section>
+)}
 
-      </section>
+      {!showHome && (
+        <>
+<section className="day-summary">
+  <div style={{ width: "100%" }}>
+    <button
+      onClick={() => setShowHome(true)}
+      style={{ marginBottom: "12px" }}
+    >
+      ← Volver
+    </button>
 
-      <section className="day-summary">
-        <div>
-          <span className="eyebrow soft">{selectedDay.label}</span>
-          <h2>{selectedDay.title}</h2>
-          <p>{selectedDay.intro}</p>
-        </div>
-        <div className="pill">{selectedDay.zone}</div>
-      </section>
+    <span className="eyebrow soft">{selectedDay.label}</span>
+    <h2>{selectedDay.title}</h2>
+    <p>{selectedDay.intro}</p>
+  </div>
+
+  <div className="pill">{selectedDay.zone}</div>
+</section>
 
       <section className="stops-list">
         {selectedDay.stops.map((stop, index) => {
@@ -157,6 +168,8 @@ if (element) {
           );
         })}
       </section>
+        </>
+      )}
     </main>
   );
 }
