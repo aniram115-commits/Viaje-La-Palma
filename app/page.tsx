@@ -45,10 +45,6 @@ const [openStopName, setOpenStopName] = useState("");
   para ver cada sitio en el mapa y en fotos.
 </p>
 
-<div className="hero-actions">
-  <button className="primary-btn">Ver itinerario</button>
-  <button className="secondary-btn">Ver mapa</button>
-</div>
       </section>
 
       <section className="day-summary">
