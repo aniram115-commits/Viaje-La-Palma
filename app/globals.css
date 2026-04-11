@@ -430,13 +430,17 @@ color: #1aa6a6;
 
 .hero-photo {
   width: 100%;
+  height: auto;
   margin-top: 18px;
-  border-radius: 20px;
+  border-radius: 22px;
   display: block;
-  object-fit: cover;
-  max-height: 260px;
-  border: 1px solid #eadbc8;
-  box-shadow: 0 10px 24px rgba(120, 85, 20, 0.12);
+  object-fit: contain;
+
+  /* AQUÍ ESTÁ LA MAGIA */
+  padding: 6px;
+  background: linear-gradient(135deg, #4ecdc4, #ffd166, #ff7b54);
+
+  box-shadow: 0 14px 30px rgba(120, 85, 20, 0.18);
 }
 
 .final-card {
@@ -457,4 +461,10 @@ color: #1aa6a6;
   margin: 0;
   color: var(--text);
   line-height: 1.7;
+}
+
+.gradient-title {
+  background: linear-gradient(90deg, #2a9d8f, #f4a261);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

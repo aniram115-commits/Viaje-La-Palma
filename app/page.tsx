@@ -60,7 +60,7 @@ const [currentView, setCurrentView] = useState<"home" | "day" | "final">("home")
     <>
       <span className="eyebrow">Viaje a La Palma 🌴</span>
 
-      <h1>La Palma con amigos ✨</h1>
+<h1 className="gradient-title">La Palma con amigos ✨</h1>
 
       <p className="hero-text">
         Un plan para enseñaros el viaje día a día, con horarios, paradas y enlaces
@@ -101,12 +101,6 @@ const [currentView, setCurrentView] = useState<"home" | "day" | "final">("home")
         </ul>
         <p>Y probablemente… 👉 nos quedaremos con ganas de más 😄</p>
       </div>
-
-      <img
-        className="hero-photo"
-        src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80"
-        alt="Paisaje final de La Palma"
-      />
     </>
   )}
 </section>
@@ -116,7 +110,7 @@ const [currentView, setCurrentView] = useState<"home" | "day" | "final">("home")
     <section className="day-summary">
       <div style={{ width: "100%" }}>
         <span className="eyebrow soft">{selectedDay.label}</span>
-        <h2>{selectedDay.title}</h2>
+<h2 className="gradient-title">{selectedDay.title}</h2>
         <p>{selectedDay.intro}</p>
       </div>
 
