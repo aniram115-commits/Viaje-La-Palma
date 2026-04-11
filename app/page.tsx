@@ -65,16 +65,34 @@ export default function HomePage() {
           const isOpen = stop.name === openStopName;
 
           return (
-            <article
+           <article
+  id={stop.name}
   key={stop.name}
   className={isOpen ? "stop-card open glow active-card" : "stop-card"}
 >
-              <button
-                className="stop-trigger"
-                onClick={() =>
-                  setOpenStopName((current) => (current === stop.name ? "" : stop.name))
-                }
-              >
+  <button
+    className="stop-trigger"
+    onClick={() => {
+      const isOpening = openStopName !== stop.name;
+      setOpenStopName((current) => (current === stop.name ? "" : stop.name));
+
+      if (isOpening) {
+        setTimeout(() => {
+const element = document.getElementById(stop.name);
+
+if (element) {
+  const yOffset = -80; // ajusta si hace falta
+  const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+  window.scrollTo({
+    top: y,
+    behavior: "smooth"
+  });
+}
+        }, 120);
+      }
+    }}
+  >
                 <div className="stop-left">
                   <div className="stop-number">{stop.time}</div>
                   <div>
