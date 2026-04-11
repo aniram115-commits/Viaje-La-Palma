@@ -234,7 +234,7 @@ intro:
     whyGo:
       "Porque es uno de los momentos más impactantes del viaje.",
     highlights: [
-      "Elegir 2–3 "miradores" (más que miradores son lugares a pie de carretera accesibles con el coche)",
+      'Elegir 2-3 "miradores" (más que miradores son lugares a pie de carretera accesibles con el coche)',
       "Muy impresionante",
       "Evitar parar en todos 😄"
       "Hay rutas guiadas que te llevan hasta el cráter o hasta casi el cráter, si queréis hacer alguna de estas habría que mirar cuánto duran y cómo reorganizar el itinerario de los días."
