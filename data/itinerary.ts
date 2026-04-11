@@ -435,8 +435,7 @@ intro:
     description:
       "Parada rápida en las salinas más fotogénicas de la isla.",
     whatYouSee:
-      "Salinas con tonos rosados y geometría espectacular.",
-      "Depende de hasta donde podamos llegar hay fotos muy chulas donde se ve también el faro de Fuencaliente.",
+      "Salinas con tonos rosados y geometría espectacular. Depende de hasta donde podamos llegar hay fotos muy chulas donde se ve también el faro de Fuencaliente.",
     whyGo:
       "Muy visual y perfecta para fotos.",
     highlights: [
