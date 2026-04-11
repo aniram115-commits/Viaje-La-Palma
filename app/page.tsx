@@ -5,7 +5,7 @@ import { itinerary } from "@/data/itinerary";
 
 export default function HomePage() {
   const [selectedDayId, setSelectedDayId] = useState(itinerary[0].id);
-  const [openStopName, setOpenStopName] = useState(itinerary[0].stops[0].name);
+const [openStopName, setOpenStopName] = useState("");
 
   const selectedDay = useMemo(
     () => itinerary.find((day) => day.id === selectedDayId) ?? itinerary[0],
@@ -25,9 +25,9 @@ export default function HomePage() {
     : "day-tab"
 }
               onClick={() => {
-                setSelectedDayId(day.id);
-                setOpenStopName(day.stops[0].name);
-              }}
+  setSelectedDayId(day.id);
+  setOpenStopName("");
+}}
             >
               {day.label}
             </button>
