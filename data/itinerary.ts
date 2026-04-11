@@ -95,12 +95,15 @@ export const itinerary: DayPlan[] = [
         type: "",
         description:
           "Aquí vamos a comer en un sitio muy típico de la isla, con comida canaria y ambiente local.",
-        whatYouSee:
-          "Comida canaria, ambiente local y uno de esos sitios que forman parte de la experiencia del viaje.",
-        whyGo:
-          "No es solo una parada para comer, también es parte del plan y del ambiente de la isla.",
-        highlights: [
-          "El servicio puede ser lento"
+whatYouSee:
+  "Un sitio clásico de la isla, con ambiente muy local, terrazas singulares y comida abundante.",
+whyGo:
+  "Porque además de comer bien, es uno de esos sitios que forman parte del recuerdo del viaje.",
+highlights: [
+  "Conviene reservar",
+  "El servicio puede ir con calma",
+  "Ideal para una comida larga"
+],
         ],
         maps: "https://www.google.com/maps/search/?api=1&query=Chipi+Chipi+La+Palma",
         photos: "https://www.google.com/search?tbm=isch&q=Chipi+Chipi+La+Palma"
@@ -124,18 +127,22 @@ export const itinerary: DayPlan[] = [
       },
       {
         time: "21:00 – 22:30",
-        name: "Cena en El Puertito",
+name: "Cena en Santa Cruz",
         place: "",
         type: "",
-        description:
-          "Cena en El Puertito para cerrar el día con calma.",
-        whatYouSee:
-          "Ambiente tranquilo para terminar la jornada sin prisas.",
-        whyGo:
-          "Es un cierre relajado después de un día muy completo.",
-        highlights: [],
-        maps: "https://www.google.com/maps/search/?api=1&query=El+Puertito+La+Palma",
-        photos: "https://www.google.com/search?tbm=isch&q=El+Puertito+La+Palma"
+description:
+  "Cena tranquila por Santa Cruz para cerrar el día sin prisas y elegir sobre la marcha según lo que nos apetezca.",
+whatYouSee:
+  "Ambiente nocturno de la capital, calles con encanto y mesas tranquilas para terminar la jornada.",
+whyGo:
+  "Porque encaja mejor que cerrarnos a un sitio concreto y nos deja margen para decidir allí.",
+highlights: [
+  "Mejor decidir el sitio sobre la marcha",
+  "Más flexible que reservar un local concreto",
+  "Buena opción para terminar el día sin correr"
+],
+maps: "https://www.google.com/maps/search/?api=1&query=restaurantes+Santa+Cruz+de+La+Palma",
+photos: "https://www.google.com/search?tbm=isch&q=Santa+Cruz+de+La+Palma+noche+restaurantes",
       },
       {
         time: "23:00",
@@ -218,7 +225,7 @@ intro:
       "Comer sin prisa",
       "Elegir según apetencia"
     ],
-    maps: "",
+maps: "https://www.google.com/maps/search/?api=1&query=restaurantes+El+Paso+Los+Llanos+La+Palma",
     photos: ""
   },
 
@@ -292,9 +299,13 @@ intro:
       "Volvemos para ducharnos y cambiarnos antes de salir otra vez.",
     whatYouSee: "Momento de pausa.",
     whyGo: "Necesario antes de la noche.",
-    highlights: [],
-    maps: "",
-    photos: ""
+highlights: [
+  "Parada práctica",
+  "Tiempo para ducharse y cambiarse",
+  "Ayuda a no llegar cansados a la noche"
+],
+maps: "https://www.google.com/maps/search/?api=1&query=Los+Cancajos+La+Palma",
+photos: "https://www.google.com/search?tbm=isch&q=Los+Cancajos+La+Palma",
   },
 
   {
