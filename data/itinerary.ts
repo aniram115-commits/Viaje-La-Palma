@@ -22,153 +22,139 @@ export type DayPlan = {
 
 export const itinerary: DayPlan[] = [
   {
+      {
     id: "dia-1",
     label: "Día 1",
-    title: "El Bosque, el Baño y el Arte de Mosaicos",
-    zone: "Noreste y Noroeste",
+    title: "Norte verde + Santa Cruz",
+    zone: "Norte y capital",
     intro:
-      "Laurisilva, piscinas naturales, miradores y una tarde entre mosaicos y volcanes.",
+      "Bosque, baño, paseo urbano y final relajado para empezar viendo la cara más verde y la más urbana de la isla.",
     stops: [
       {
-        time: "09:00 – 11:30",
-        name: "Los Tilos: Cascada y ruta del Espigón Atravesado",
-        place: "San Andrés y Sauces",
-        type: "Naturaleza",
+        time: "08:30 – 11:30",
+        name: "Los Tilos — Espigón Atravesado + Cascada",
+        place: "",
+        type: "",
         description:
-          "Bosque húmedo y frondoso de laurisilva, con sendero verde, ambiente fresco y sensación de selva atlántica.",
+          "Llegaremos al centro de visitantes de Los Tilos, donde dejaremos el coche. Antes de empezar la ruta, nos acercaremos a ver la cascada, que está a pocos minutos andando. Es una parada rápida pero muy bonita, escondida entre el bosque. Después comenzaremos la ruta del Espigón Atravesado de unos 5 km en total, un sendero que se adentra en la laurisilva.",
         whatYouSee:
-          "Musgos, helechos gigantes, paredes húmedas, barrancos y una vegetación espectacular.",
+          "Aquí lo impresionante no es un punto concreto, sino todo el camino: vegetación cerrada, humedad y la sensación de estar en una selva jurásica que no parece Canarias. La sensación de estar en un sitio totalmente distinto al resto de la isla, con verde intenso, olores y humedad por todas partes.",
         whyGo:
-          "Porque es una de las estampas más especiales de La Palma y una forma preciosa de empezar el viaje.",
+          "Es una de las experiencias más especiales del viaje porque no se parece a nada del resto de la isla. No es solo la cascada, es el recorrido entero. Iremos subiendo tranquilamente con idea de llegar hasta el mirador del Espigón Atravesado si vamos bien de tiempo.",
         highlights: [
-          "Ideal para ir temprano",
-          "Muy fotogénico",
-          "Llevad calzado que no resbale"
+          "Si nos entretenemos demasiado al principio, nos quedaremos sin tiempo para la ruta completa",
+          "Mejor avanzar primero y disfrutar más a la vuelta",
+          "Zapatillas cómodas (no hace falta bota técnica, pero tampoco iría con unos tenis de paseo normales)",
+          "Agua",
+          "Ropa en capas: ligera, pero con algo de abrigo tipo sudadera o chaqueta fina"
         ],
         maps: "https://www.google.com/maps/search/?api=1&query=Los+Tilos+La+Palma",
         photos: "https://www.google.com/search?tbm=isch&q=Los+Tilos+La+Palma"
       },
       {
-        time: "12:00 – 13:30",
-        name: "Charco Azul o La Fajana",
-        place: "San Andrés y Sauces / Barlovento",
-        type: "Baño",
+        time: "12:00 – 13:15",
+        name: "Charco Azul",
+        place: "",
+        type: "",
         description:
-          "Piscinas naturales perfectas para refrescarse y disfrutar del contraste entre roca volcánica y mar.",
+          "Después de la caminata, toca recompensa: baño en piscinas naturales. Aquí el contraste es brutal: roca volcánica negra y agua transparente. Nos vendrá perfecto para relajarnos, aunque probablemente nos quedaremos con ganas de más tiempo.",
         whatYouSee:
-          "Agua azul intensa, plataformas junto al Atlántico y roca negra muy característica.",
+          "Piscinas naturales entre roca volcánica negra, agua transparente y un entorno muy bonito para parar y desconectar.",
         whyGo:
-          "Porque después del bosque apetece muchísimo un baño en un sitio tan bonito.",
+          "Es el momento perfecto para relajarnos después de la ruta y hacer una parada muy disfrutona antes de seguir con el día.",
         highlights: [
-          "Comprobad el estado del mar",
-          "Charco Azul es más cómodo",
-          "La Fajana tiene un punto más salvaje"
+          "Trampa típica: pensamos 'baño rápido' y se nos va más de una hora",
+          "Bañador",
+          "Toalla",
+          "Cholas",
+          "Tenemos cerca las Piscinas de La Fajana por si preferís ir a esas en vez de a estas"
         ],
         maps: "https://www.google.com/maps/search/?api=1&query=Charco+Azul+La+Palma",
-        photos:
-          "https://www.google.com/search?tbm=isch&q=Charco+Azul+La+Palma+o+La+Fajana+Barlovento"
+        photos: "https://www.google.com/search?tbm=isch&q=Charco+Azul+La+Palma"
       },
       {
-        time: "13:30 – 15:00",
-        name: "Almuerzo en San Andrés",
-        place: "San Andrés",
-        type: "Comida",
+        time: "13:15 – 13:35",
+        name: "San Andrés (opcional si vamos bien de tiempo)",
+        place: "",
+        type: "",
         description:
-          "Parada tranquila en uno de los pueblos con más encanto del norte.",
+          "Si vamos bien de tiempo, podemos hacer una parada rápida por este pueblito. Casas tradicionales, ambiente tranquilo y una de las plazas más bonitas de la isla, pero sin liarnos demasiado.",
         whatYouSee:
-          "Casas tradicionales, calles con calma y mucho sabor local.",
+          "Un pueblo pequeño con mucho encanto, arquitectura tradicional y ambiente relajado.",
         whyGo:
-          "Porque es el momento perfecto para comer sin prisa y disfrutar del ambiente.",
+          "Es una parada breve y agradable que suma mucho si el día va bien de tiempo, pero no pasa nada si la saltamos.",
         highlights: [
-          "Perfecto para sobremesa",
-          "Mejor reservar en fin de semana",
-          "Buen punto para bajar el ritmo"
+          "Si vamos justos, lo saltamos sin problema"
         ],
         maps: "https://www.google.com/maps/search/?api=1&query=San+Andres+La+Palma",
         photos: "https://www.google.com/search?tbm=isch&q=San+Andres+La+Palma"
       },
       {
-        time: "16:00 – 17:00",
-        name: "Mirador del Time",
-        place: "Tijarafe",
-        type: "Mirador",
+        time: "14:30 – 16:00",
+        name: "Chipi Chipi",
+        place: "",
+        type: "",
         description:
-          "Balcón natural sobre el Valle de Aridane y la costa oeste.",
+          "Aquí vamos a comer en un sitio muy típico de la isla, con comida canaria y ambiente local.",
         whatYouSee:
-          "Plataneras, barrancos, horizonte abierto y una vista enorme del valle.",
+          "Comida canaria, ambiente local y uno de esos sitios que forman parte de la experiencia del viaje.",
         whyGo:
-          "Porque en pocos minutos te da una de las panorámicas más potentes de la isla.",
+          "No es solo una parada para comer, también es parte del plan y del ambiente de la isla.",
         highlights: [
-          "Parada corta muy agradecida",
-          "Muy buena luz por la tarde",
-          "Ideal para fotos"
+          "El servicio puede ser lento"
         ],
-        maps: "https://www.google.com/maps/search/?api=1&query=Mirador+del+Time+La+Palma",
-        photos: "https://www.google.com/search?tbm=isch&q=Mirador+del+Time+La+Palma"
+        maps: "https://www.google.com/maps/search/?api=1&query=Chipi+Chipi+La+Palma",
+        photos: "https://www.google.com/search?tbm=isch&q=Chipi+Chipi+La+Palma"
       },
       {
-        time: "17:30 – 18:15",
-        name: "Plaza de La Glorieta",
-        place: "Las Manchas",
-        type: "Arte",
+        time: "16:30 – 20:30",
+        name: "Santa Cruz de La Palma",
+        place: "",
+        type: "",
         description:
-          "Plaza llena de azulejos y mosaicos creada por Luis Morera, con un aire muy alegre y muy especial.",
+          "Por la tarde vamos a pasear por la capital, que tiene muchísimo encanto. Será un paseo tranquilo, sin prisas, dejándonos llevar.",
         whatYouSee:
-          "Bancos ondulados, formas orgánicas, color y un ambiente artístico en medio del paisaje volcánico.",
+          "Los famosos balcones de colores, el Castillo de Santa Catalina, el Castillo de la Virgen, el Barco de la Virgen, la Calle Real y la Plaza de España.",
         whyGo:
-          "Porque cambia por completo el tono del día y es un sitio muy bonito para peques y mayores.",
+          "Es una forma muy bonita de ver la parte más urbana y con más encanto de la isla, paseando sin prisa y disfrutando del ambiente.",
         highlights: [
-          "Muy buena para fotos",
-          "Colorida y original",
-          "Parada corta y muy resultona"
+          "Trampa: entre fotos, paseo y parar aquí y allá, el tiempo vuela"
         ],
-        maps:
-          "https://www.google.com/maps/search/?api=1&query=Plaza+de+La+Glorieta+Las+Manchas+La+Palma",
-        photos:
-          "https://www.google.com/search?tbm=isch&q=Plaza+de+La+Glorieta+Las+Manchas+La+Palma"
+        maps: "https://www.google.com/maps/search/?api=1&query=Santa+Cruz+de+La+Palma",
+        photos: "https://www.google.com/search?tbm=isch&q=Santa+Cruz+de+La+Palma+balcones+castillo+plaza"
       },
       {
-        time: "18:15 – 19:00",
-        name: "Tubo Volcánico (Cueva de las Palomas)",
-        place: "Las Manchas",
-        type: "Volcán",
+        time: "21:00 – 22:30",
+        name: "Cena en El Puertito",
+        place: "",
+        type: "",
         description:
-          "Un tubo volcánico que ayuda a entender cómo circuló la lava bajo la superficie.",
+          "Cena en El Puertito para cerrar el día con calma.",
         whatYouSee:
-          "Cavidades volcánicas, texturas geológicas y paisaje de coladas alrededor.",
+          "Ambiente tranquilo para terminar la jornada sin prisas.",
         whyGo:
-          "Porque conecta muy bien con la historia volcánica de La Palma de forma visual.",
-        highlights: [
-          "Mejor con reserva si queréis entrar",
-          "Aun sin entrar, el entorno merece la pena",
-          "Muy didáctico"
-        ],
-        maps:
-          "https://www.google.com/maps/search/?api=1&query=Cueva+de+las+Palomas+La+Palma",
-        photos: "https://www.google.com/search?tbm=isch&q=Cueva+de+las+Palomas+La+Palma"
+          "Es un cierre relajado después de un día muy completo.",
+        highlights: [],
+        maps: "https://www.google.com/maps/search/?api=1&query=El+Puertito+La+Palma",
+        photos: "https://www.google.com/search?tbm=isch&q=El+Puertito+La+Palma"
       },
       {
-        time: "19:30 – Final",
-        name: "Los Cancajos",
-        place: "Breña Baja",
-        type: "Paseo",
+        time: "23:00",
+        name: "Paseo por Los Cancajos",
+        place: "",
+        type: "",
         description:
-          "Paseo nocturno relajado por la costa para cerrar el día con calma.",
+          "Terminamos el día relajados, después de haber visto la cara más verde y la más urbana de la isla.",
         whatYouSee:
-          "Mar, paseo marítimo y ambiente tranquilo al anochecer.",
+          "Paseo costero tranquilo por la noche.",
         whyGo:
-          "Porque remata el día con una parte más personal y nostálgica del viaje.",
-        highlights: [
-          "Muy cómodo para pasear",
-          "Sin presión de horarios",
-          "Buen final de jornada"
-        ],
+          "Es un final perfecto para bajar revoluciones y cerrar bien el primer día.",
+        highlights: [],
         maps: "https://www.google.com/maps/search/?api=1&query=Los+Cancajos+La+Palma",
         photos: "https://www.google.com/search?tbm=isch&q=Los+Cancajos+La+Palma"
       }
     ]
   },
-  {
     id: "dia-2",
     label: "Día 2",
     title: "Recuerdos de Infancia y el Gran Cráter",
