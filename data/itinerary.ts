@@ -31,7 +31,7 @@ export const itinerary: DayPlan[] = [
     stops: [
       {
         time: "08:30 – 11:30",
-        name: "Los Tilos — Espigón Atravesado + Cascada",
+        name: "Los Tilos — Ruta del Espigón Atravesado + Cascada",
         place: "",
         type: "",
         description:
@@ -234,9 +234,10 @@ intro:
     whyGo:
       "Porque es uno de los momentos más impactantes del viaje.",
     highlights: [
-      "Elegir 2–3 miradores",
+      "Elegir 2–3 "miradores" (más que miradores son lugares a pie de carretera accesibles con el coche)",
       "Muy impresionante",
       "Evitar parar en todos 😄"
+      "Hay rutas guiadas que te llevan hasta el cráter o hasta casi el cráter, si queréis hacer alguna de estas habría que mirar cuánto duran y cómo reorganizar el itinerario de los días."
     ],
     maps: "https://www.google.com/maps/search/?api=1&query=Tajogaite+La+Palma",
     photos: "https://www.google.com/search?tbm=isch&q=Tajogaite+La+Palma"
@@ -244,7 +245,7 @@ intro:
 
   {
     time: "16:45 – 17:15",
-    name: "Mirado de La Cumbrecita",
+    name: "Mirador de La Cumbrecita",
     place: "",
     type: "",
     description:
@@ -254,7 +255,7 @@ intro:
     whyGo:
       "Es una de las vistas más memorables de todo el viaje.",
     highlights: [
-      "Reservar parking obligatorio",
+      "Reservar parking obligatorio (online)",
       "Con 30 min es suficiente",
       "Muy fácil acceso"
     ],
@@ -302,13 +303,13 @@ intro:
     place: "",
     type: "",
     description:
-      "Plan de noche con mojito y ambiente relajado.",
+      "Plan de noche con mojito y ambiente relajado. (Así lo quiere Cris😂)",
     whatYouSee:
       "Ambiente nocturno tranquilo.",
     whyGo:
       "Buen cierre del día.",
     highlights: [
-      "Puede haber cambiado tras el incendio"
+      "Tengo la duda de si cuando lo reabrieron, después del incendio de 2017, se quedó solo como restaurante"
     ],
     maps: "",
     photos: ""
@@ -336,6 +337,7 @@ intro:
       "Es una de las experiencias paisajísticas más potentes del viaje.",
     highlights: [
       "Muchas curvas en la subida",
+      "Si no pillamos un día despejado, no veremos nada, es cuestión de arriesgarse",
       "No quedarse demasiado tiempo",
       "Llevar algo de abrigo"
     ],
@@ -377,7 +379,7 @@ intro:
     highlights: [
       "Comer sin prisa",
       "Buen ambiente",
-      "Posibilidad de adelantar si vamos bien"
+      "Es posible que, si vamos bien de tiempo, podamos comer antes para ir más tranquilos por la tarde"
     ],
     maps: "https://www.google.com/maps/search/?api=1&query=Puerto+de+Tazacorte+La+Palma",
     photos: "https://www.google.com/search?tbm=isch&q=Puerto+de+Tazacorte+La+Palma"
@@ -396,6 +398,8 @@ intro:
       "Porque es una forma muy visual de entender el volcán.",
     highlights: [
       "Entrada aprox 5€",
+      "Centro de interpretación con simulador de terremotos (muy curioso)",
+      "Curiosidad: dentro del cráter crecen pinos canarios, algo poco habitual en volcanes más recientes.",
       "Ruta corta",
       "Llevar gorra"
     ],
@@ -415,7 +419,7 @@ intro:
     whyGo:
       "Perfecto para el último chapuzón del viaje.",
     highlights: [
-      "Vigilar el tiempo",
+      "Vigilar el tiempo para poder ver lo que nos falta",
       "Muy salvaje",
       "Último baño"
     ],
@@ -432,6 +436,7 @@ intro:
       "Parada rápida en las salinas más fotogénicas de la isla.",
     whatYouSee:
       "Salinas con tonos rosados y geometría espectacular.",
+      "Depende de hasta donde podamos llegar hay fotos muy chulas donde se ve también el faro de Fuencaliente.",
     whyGo:
       "Muy visual y perfecta para fotos.",
     highlights: [
