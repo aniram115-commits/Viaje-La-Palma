@@ -134,19 +134,26 @@ if (element) {
                   </div>
 
                   <div className="actions">
-<a
-  href={
-    stop.photos ||
-    `https://www.google.com/search?tbm=isch&q=${encodeURIComponent(
-      stop.name + " La Palma"
-    )}`
-  }
-  target="_blank"
-  rel="noopener noreferrer"
-  className="secondary"
->
-  📸 Fotos
-</a>
+                    <a
+                      href={stop.maps}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      📍 Ubicación
+                    </a>
+                    <a
+                      href={
+                        stop.photos ||
+                        `https://www.google.com/search?tbm=isch&q=${encodeURIComponent(
+                          stop.name + " La Palma"
+                        )}`
+                      }
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="secondary"
+                    >
+                      📸 Fotos
+                    </a>
                   </div>
                 </div>
               )}
