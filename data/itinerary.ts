@@ -321,7 +321,7 @@ photos: "https://www.google.com/search?tbm=isch&q=Los+Cancajos+La+Palma",
     highlights: [
       "Tengo la duda de si cuando lo reabrieron, después del incendio de 2017, se quedó solo como restaurante"
     ],
-    maps: "",
+    maps: "https://maps.app.goo.gl/qDgSX6GmTiK2pDiq8?g_st=ic ",
     photos: ""
   }
 ]
