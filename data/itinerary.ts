@@ -21,7 +21,6 @@ export type DayPlan = {
 };
 
 export const itinerary: DayPlan[] = [
-  {
       {
     id: "dia-1",
     label: "Día 1",
