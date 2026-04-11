@@ -103,7 +103,6 @@ highlights: [
   "Conviene reservar",
   "El servicio puede ir con calma",
   "Ideal para una comida larga"
-],
         ],
         maps: "https://www.google.com/maps/search/?api=1&query=Chipi+Chipi+La+Palma",
         photos: "https://www.google.com/search?tbm=isch&q=Chipi+Chipi+La+Palma"
