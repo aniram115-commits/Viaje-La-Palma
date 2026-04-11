@@ -60,7 +60,7 @@ export const itinerary: DayPlan[] = [
         whatYouSee:
           "Piscinas naturales entre roca volcánica negra, agua transparente y un entorno muy bonito para parar y desconectar.",
         whyGo:
-          "Es el momento perfecto para relajarnos después de la ruta y hacer una parada muy disfrutona antes de seguir con el día.",
+          "Es el momento perfecto para relajarnos después de la ruta y hacer una parada muy chula antes de seguir con el día.",
         highlights: [
           "Trampa típica: pensamos 'baño rápido' y se nos va más de una hora",
           "Bañador",
@@ -157,116 +157,163 @@ export const itinerary: DayPlan[] = [
   {
     id: "dia-2",
     label: "Día 2",
-    title: "Recuerdos de Infancia y el Gran Cráter",
-    zone: "Capital y Centro",
-    intro:
-      "Santa Cruz emocional, buena comida y una tarde con una de las grandes vistas de la isla.",
-    stops: [
-      {
-        time: "09:30 – 12:30",
-        name: "Ruta de la Nostalgia por Santa Cruz",
-        place: "Santa Cruz de La Palma",
-        type: "Ciudad",
-        description:
-          "Recorrido sentimental por rincones históricos y recuerdos de infancia en la capital.",
-        whatYouSee:
-          "Plaza de España, balcones marítimos, castillos, barco de la Virgen y arquitectura tradicional.",
-        whyGo:
-          "Porque mezcla memoria personal con la parte más monumental de Santa Cruz.",
-        highlights: [
-          "Ideal para pasear sin prisa",
-          "Muchos detalles bonitos",
-          "Muy buena ruta urbana"
-        ],
-        maps:
-          "https://www.google.com/maps/search/?api=1&query=Plaza+de+Espana+Santa+Cruz+de+La+Palma",
-        photos:
-          "https://www.google.com/search?tbm=isch&q=Santa+Cruz+de+La+Palma+balcones+maritimos+castillos"
-      },
-      {
-        time: "13:30 – 15:30",
-        name: "Almuerzo en Chipi-Chipi",
-        place: "Santa Cruz de La Palma",
-        type: "Comida",
-        description:
-          "Parada clásica para comer bien y disfrutar de un sitio con mucha personalidad.",
-        whatYouSee:
-          "Ambiente local, espacios singulares y platos generosos.",
-        whyGo:
-          "Porque es de esos sitios que acaban siendo parte del recuerdo del viaje.",
-        highlights: [
-          "Conviene reservar",
-          "Comida abundante",
-          "Perfecto para sobremesa larga"
-        ],
-        maps:
-          "https://www.google.com/maps/search/?api=1&query=Chipi+Chipi+Santa+Cruz+de+La+Palma",
-        photos:
-          "https://www.google.com/search?tbm=isch&q=Chipi+Chipi+Santa+Cruz+de+La+Palma"
-      },
-      {
-        time: "16:00 – 17:30",
-        name: "La Cumbrecita",
-        place: "El Paso",
-        type: "Mirador",
-        description:
-          "Uno de los accesos más cómodos para asomarse al interior de la Caldera de Taburiente.",
-        whatYouSee:
-          "Paredes gigantes, pinar canario y un anfiteatro natural impresionante.",
-        whyGo:
-          "Porque es una de las vistas más memorables de toda La Palma.",
-        highlights: [
-          "Reserva de parking imprescindible",
-          "Paseo fácil",
-          "Llevad agua"
-        ],
-        maps:
-          "https://www.google.com/maps/search/?api=1&query=Mirador+de+La+Cumbrecita+La+Palma",
-        photos: "https://www.google.com/search?tbm=isch&q=La+Cumbrecita+La+Palma"
-      },
-      {
-        time: "18:30 – 20:30",
-        name: "Puerto de Tazacorte",
-        place: "Tazacorte",
-        type: "Atardecer",
-        description:
-          "Puerto colorido de la costa oeste para disfrutar del atardecer.",
-        whatYouSee:
-          "Casas de colores, muelle, playa y luz cálida a última hora.",
-        whyGo:
-          "Porque es una postal perfecta para cerrar la tarde.",
-        highlights: [
-          "Muy buena hora para fotos",
-          "Ambiente relajado",
-          "Ideal para paseo antes de cenar"
-        ],
-        maps:
-          "https://www.google.com/maps/search/?api=1&query=Puerto+de+Tazacorte+La+Palma",
-        photos:
-          "https://www.google.com/search?tbm=isch&q=Puerto+de+Tazacorte+La+Palma"
-      },
-      {
-        time: "21:00",
-        name: "Cena en El Puertito",
-        place: "Santa Cruz de La Palma",
-        type: "Cena",
-        description:
-          "Final marinero con pescado y ambiente portuario en Santa Cruz.",
-        whatYouSee:
-          "Muelle, mesas tranquilas y la ciudad iluminada.",
-        whyGo:
-          "Porque cierra el día con algo sencillo, rico y muy agradable.",
-        highlights: [
-          "Mejor reservar si vais a hora fuerte",
-          "Ideal para pescado",
-          "Cena sin prisas"
-        ],
-        maps:
-          "https://www.google.com/maps/search/?api=1&query=El+Puertito+Santa+Cruz+de+La+Palma",
-        photos:
-          "https://www.google.com/search?tbm=isch&q=El+Puertito+Santa+Cruz+de+La+Palma"
-      }
-    ]
+    title: "Volcán, caldera y atardecer",
+zone: "Centro y Sur volcánico",
+intro:
+  "Volcanes por dentro y por fuera, caldera espectacular y atardecer frente al mar para cerrar el día.",
+   stops: [
+  {
+    time: "09:30 – 13:00",
+    name: "Cueva de las Palomas",
+    place: "",
+    type: "",
+    description:
+      "Este día lo empezaremos metiéndonos literalmente dentro de un volcán. Llegaremos pronto porque las entradas se agotan super rápido: 09:30 compraremos las entradas, 10:00 abre el centro de interpretación, 11:00 visita al primer tubo volcánico y 12:00 al segundo.",
+    whatYouSee:
+      "Caminaremos por túneles formados por lava, viendo cómo se solidificó por dentro. Estar dentro de un tubo volcánico real y ver las formas de la lava es una experiencia única.",
+    whyGo:
+      "Es una de las experiencias más diferentes del viaje, porque no solo ves el volcán: te metes dentro.",
+    highlights: [
+      "Llegar temprano o puedes quedarte sin entradas",
+      "Cuesta unos 12€ por persona",
+      "Zapatillas cerradas",
+      "Algo de abrigo (dentro refresca)"
+    ],
+    maps: "https://www.google.com/maps/search/?api=1&query=Cueva+de+las+Palomas+La+Palma",
+    photos: "https://www.google.com/search?tbm=isch&q=Cueva+de+las+Palomas+La+Palma"
+  },
+
+  {
+    time: "13:10 – 13:40",
+    name: "Plaza de La Glorieta",
+    place: "",
+    type: "",
+    description:
+      "Parada rápida en una plaza artística llena de mosaicos de colores con rollo Gaudí. Es curiosa, diferente y perfecta para fotos.",
+    whatYouSee:
+      "Formas orgánicas, bancos ondulados y colores muy llamativos en medio del paisaje volcánico.",
+    whyGo:
+      "Es una parada corta pero muy vistosa que rompe completamente con lo anterior.",
+    highlights: [
+      "Parada rápida",
+      "Muy fotogénica",
+      "No entretenerse demasiado"
+    ],
+    maps: "https://www.google.com/maps/search/?api=1&query=Plaza+de+La+Glorieta+La+Palma",
+    photos: "https://www.google.com/search?tbm=isch&q=Plaza+de+La+Glorieta+La+Palma"
+  },
+
+  {
+    time: "14:00 – 15:15",
+    name: "Comida (El Paso / Los Llanos)",
+    place: "",
+    type: "",
+    description:
+      "Después de la mañana volcánica, paramos a comer tranquilos antes de seguir.",
+    whatYouSee:
+      "Ambiente relajado y pausa necesaria tras la mañana intensa.",
+    whyGo:
+      "Para recargar energía antes de la tarde.",
+    highlights: [
+      "Comer sin prisa",
+      "Elegir según apetencia"
+    ],
+    maps: "",
+    photos: ""
+  },
+
+  {
+    time: "15:30 – 16:15",
+    name: "Tajogaite",
+    place: "",
+    type: "",
+    description:
+      "Aquí vamos a ver el impacto real de la última erupción volcánica. El paisaje cambia completamente: lava reciente y zonas sepultadas.",
+    whatYouSee:
+      "Coladas recientes, terreno negro y una geografía totalmente nueva.",
+    whyGo:
+      "Porque es uno de los momentos más impactantes del viaje.",
+    highlights: [
+      "Elegir 2–3 miradores",
+      "Muy impresionante",
+      "Evitar parar en todos 😄"
+    ],
+    maps: "https://www.google.com/maps/search/?api=1&query=Tajogaite+La+Palma",
+    photos: "https://www.google.com/search?tbm=isch&q=Tajogaite+La+Palma"
+  },
+
+  {
+    time: "16:45 – 17:15",
+    name: "La Cumbrecita",
+    place: "",
+    type: "",
+    description:
+      "Subimos a uno de los miradores más espectaculares de la isla para ver el interior de la Caldera de Taburiente.",
+    whatYouSee:
+      "Paredes gigantes, colores de la roca y un paisaje brutal.",
+    whyGo:
+      "Es una de las vistas más memorables de todo el viaje.",
+    highlights: [
+      "Reservar parking obligatorio",
+      "Con 30 min es suficiente",
+      "Muy fácil acceso"
+    ],
+    maps: "https://www.google.com/maps/search/?api=1&query=La+Cumbrecita+La+Palma",
+    photos: "https://www.google.com/search?tbm=isch&q=La+Cumbrecita+La+Palma"
+  },
+
+  {
+    time: "18:30 – 20:30",
+    name: "Playa de la Zamora",
+    place: "",
+    type: "",
+    description:
+      "Terminamos el día en el sur con baño, merienda-cena y atardecer junto al mar.",
+    whatYouSee:
+      "Costa volcánica, mar abierto y luz dorada al caer el sol.",
+    whyGo:
+      "Es uno de los mejores momentos del día, muy relajado.",
+    highlights: [
+      "Ideal para atardecer",
+      "Ambiente tranquilo",
+      "Probablemente queramos quedarnos más 😄"
+    ],
+    maps: "https://www.google.com/maps/search/?api=1&query=Playa+de+la+Zamora+La+Palma",
+    photos: "https://www.google.com/search?tbm=isch&q=Playa+de+la+Zamora+La+Palma"
+  },
+
+  {
+    time: "21:15 – 22:15",
+    name: "Vuelta a Los Cancajos",
+    place: "",
+    type: "",
+    description:
+      "Volvemos para ducharnos y cambiarnos antes de salir otra vez.",
+    whatYouSee: "Momento de pausa.",
+    whyGo: "Necesario antes de la noche.",
+    highlights: [],
+    maps: "",
+    photos: ""
+  },
+
+  {
+    time: "22:30 – 00:00",
+    name: "La Bodeguita del Medio",
+    place: "",
+    type: "",
+    description:
+      "Plan de noche con mojito y ambiente relajado.",
+    whatYouSee:
+      "Ambiente nocturno tranquilo.",
+    whyGo:
+      "Buen cierre del día.",
+    highlights: [
+      "Puede haber cambiado tras el incendio"
+    ],
+    maps: "",
+    photos: ""
+  }
+]
   },
   {
     id: "dia-3",
